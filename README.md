@@ -15,7 +15,10 @@ empresa/{id}/edit: muestra los datos del item con id={id} en el form para editar
 
 empresa/{id}: se muestra para ver o eliminar  item
 
-BASE DE DATOS:
+BASE DE DATOS: 
+
 user:postgres
+
 pass:serverpostgres
+
 nombre de la base de datos:crudSymfony
