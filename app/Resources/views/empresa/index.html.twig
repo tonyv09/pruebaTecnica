@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Empresas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Sitioweb</th>
+                <th>Fechafundacion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for empresa in empresas %}
+            <tr>
+                <td><a href="{{ path('empresa_show', { 'id': empresa.id }) }}">{{ empresa.id }}</a></td>
+                <td>{{ empresa.nombre }}</td>
+                <td>{{ empresa.direccion }}</td>
+                <td>{{ empresa.sitioWeb }}</td>
+                <td>{% if empresa.fechaFundacion %}{{ empresa.fechaFundacion|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('empresa_show', { 'id': empresa.id }) }}">ver</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('empresa_edit', { 'id': empresa.id }) }}">editar</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('empresa_new') }}">Crear una nueva empresa</a>
+        </li>
+    </ul>
+{% endblock %}

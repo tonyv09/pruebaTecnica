@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: 5432
+    database_name: crudSymfony
+    database_user: postgres
+    database_password: serverpostgres
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: 74525e3eeb2699fd018439814d2ad59c7caf4078

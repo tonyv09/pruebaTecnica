@@ -1,0 +1,7 @@
+e879fc,127.0.0.1,GET,http://localhost:8000/,1557252293,,200
+82f959,127.0.0.1,GET,http://localhost:8000/empresa,1557252320,,301
+e9bb77,127.0.0.1,GET,http://localhost:8000/empresa/,1557252322,,200
+bfa22e,127.0.0.1,GET,http://localhost:8000/empresa/new,1557252330,,200
+3d36f0,127.0.0.1,GET,http://localhost:8000/empresa/new,1557253545,,200
+038dc0,127.0.0.1,GET,http://localhost:8000/empresa/,1557253553,,200
+c62514,127.0.0.1,GET,http://localhost:8000/empresa/new,1557253561,,200
